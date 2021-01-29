@@ -44,9 +44,9 @@ final class MainViewController: UIViewController {
     private var props: Props = .initial
 
     @IBOutlet private var insertLabel: UILabel!
-    @IBOutlet private var resultLabel: UILabel!
+    @IBOutlet private var resultTitle: UILabel!
     @IBOutlet private var insertTextField: UITextField!
-    @IBOutlet private var resultTextField: UILabel!
+    @IBOutlet private var resultLabel: UILabel!
     @IBOutlet private var descriptionLabel: UILabel!
     @IBOutlet private var infoBtn: UIButton!
     
@@ -67,7 +67,9 @@ final class MainViewController: UIViewController {
         self.props = props
         insertLabel.text = props.insertLabelText
         insertTextField.text = props.enteredString
-        resultTextField.text = props.result
+        resultTitle.text = props.resultLabelText
+
+        resultLabel.text = props.result
         
         switch props.state {
         case .initial:
@@ -75,7 +77,7 @@ final class MainViewController: UIViewController {
             resultLabel.text = ""
         case .calculated:
             descriptionLabel.text = props.descriptionText
-            resultLabel.text = props.resultLabelText
+            resultLabel.text = props.result
         }
         
         self.view.setNeedsLayout()

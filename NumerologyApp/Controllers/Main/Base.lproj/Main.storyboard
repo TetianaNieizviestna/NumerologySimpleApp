@@ -42,7 +42,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niz-iL-mfk">
                                                 <rect key="frame" x="15" y="94" width="354" height="0.0"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -123,8 +123,8 @@
                         <outlet property="infoBtn" destination="xBI-Q8-a89" id="ZUe-ro-Va2"/>
                         <outlet property="insertLabel" destination="vsO-dh-5v0" id="nB9-lt-jQc"/>
                         <outlet property="insertTextField" destination="fxu-9h-Fhi" id="jEq-fl-tQJ"/>
-                        <outlet property="resultLabel" destination="24M-8o-T2u" id="GZ4-bb-5Ww"/>
-                        <outlet property="resultTextField" destination="niz-iL-mfk" id="sJR-ii-Chw"/>
+                        <outlet property="resultLabel" destination="niz-iL-mfk" id="sJR-ii-Chw"/>
+                        <outlet property="resultTitle" destination="24M-8o-T2u" id="GZ4-bb-5Ww"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

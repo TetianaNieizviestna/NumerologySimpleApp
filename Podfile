@@ -4,8 +4,8 @@
 target 'NumerologyApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'Firebase/Analytics', '~> 7.4.0'
-  pod 'Firebase/Crashlytics', '~> 7.4.0'
+  pod 'FirebaseAnalytics', '~> 7.4.0'
+  pod 'FirebaseCrashlytics', '~> 7.4.0'
   # Pods for NumerologyApp
 
 end

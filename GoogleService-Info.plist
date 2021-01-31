@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>12120717843-a38eqjh38pr4m6c7gc7id8h8iigtljso.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.12120717843-a38eqjh38pr4m6c7gc7id8h8iigtljso</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAx1Gm-GXVNhqGizQVvePadP4QtO2RF-0M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>12120717843</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.vivtnnx.NumerologySimpleApp</string>
+	<key>PROJECT_ID</key>
+	<string>numerologysimpleapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>numerologysimpleapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:12120717843:ios:0f84992ec9c649dc479de6</string>
+</dict>
+</plist>

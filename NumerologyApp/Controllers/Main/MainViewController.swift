@@ -85,9 +85,11 @@ final class MainViewController: UIViewController {
     
     private func setup() {
         insertTextField.addTarget(self, action: #selector(didTextChanged), for: .editingChanged)
+        insertTextField.delegate = self
     }
     
     @IBAction func calculateBtnAction(_ sender: UIButton) {
+        view.endEditing(true)
         props.calculateAction.perform()
     }
     
@@ -98,5 +100,13 @@ final class MainViewController: UIViewController {
     @objc
     func didTextChanged(_ sender: UITextField) {
         props.changeTextAction.perform(with: sender.text)
+    }
+}
+
+extension MainViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        props.calculateAction.perform()
+        return false
     }
 }

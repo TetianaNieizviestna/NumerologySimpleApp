@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		C6EBFF6525AE01C80040B883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6EBFF6425AE01C80040B883 /* Assets.xcassets */; };
 		C6EBFF6825AE01C80040B883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EBFF6625AE01C80040B883 /* LaunchScreen.storyboard */; };
 		C6F646AF25C497DF00535490 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F646AE25C497DF00535490 /* Command.swift */; };
+		C6F646C325C6A25700535490 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6F646C225C6A25700535490 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		C6EBFF6725AE01C80040B883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6EBFF6925AE01C80040B883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6F646AE25C497DF00535490 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		C6F646C225C6A25700535490 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,6 @@
 				0A40633194C6DABD5A89ECA8 /* Pods-NumerologyApp.debug.xcconfig */,
 				7CC62BA2E3D7001FBB6CC55C /* Pods-NumerologyApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +141,7 @@
 				C693461B25C4391A001DC565 /* Extensions */,
 				C6EBFF6425AE01C80040B883 /* Assets.xcassets */,
 				C6EBFF6625AE01C80040B883 /* LaunchScreen.storyboard */,
+				C6F646C225C6A25700535490 /* GoogleService-Info.plist */,
 				C6EBFF6925AE01C80040B883 /* Info.plist */,
 			);
 			path = NumerologyApp;
@@ -164,6 +166,8 @@
 				C6EBFF5425AE01C50040B883 /* Sources */,
 				C6EBFF5525AE01C50040B883 /* Frameworks */,
 				C6EBFF5625AE01C50040B883 /* Resources */,
+				7E97687C532597A1500CCBD9 /* [CP] Embed Pods Frameworks */,
+				C6F646DE25C6A53900535490 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -212,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6EBFF6825AE01C80040B883 /* LaunchScreen.storyboard in Resources */,
+				C6F646C325C6A25700535490 /* GoogleService-Info.plist in Resources */,
 				C6EBFF6525AE01C80040B883 /* Assets.xcassets in Resources */,
 				C6EBFF6325AE01C50040B883 /* Main.storyboard in Resources */,
 			);
@@ -220,6 +225,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7E97687C532597A1500CCBD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NumerologyApp/Pods-NumerologyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NumerologyApp/Pods-NumerologyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NumerologyApp/Pods-NumerologyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F646DE25C6A53900535490 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		E9534E3CCE27C8625DB2AFC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -413,7 +454,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vivtnnx.NumerologyApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivtnnx.NumerologySimpleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -433,7 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vivtnnx.NumerologyApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivtnnx.NumerologySimpleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

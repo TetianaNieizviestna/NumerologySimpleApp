@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8D107178FFE474D61C1F8F86 /* Pods_NumerologyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89499BDEC889C797665EA29 /* Pods_NumerologyApp.framework */; };
+		ABB25C97286DBE59006FBBEF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABB25C84286DBE59006FBBEF /* Localizable.strings */; };
+		ABB25C98286DBE59006FBBEF /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB25C88286DBE59006FBBEF /* Language.swift */; };
+		ABB25C99286DBE59006FBBEF /* Localizationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB25C90286DBE59006FBBEF /* Localizationable.swift */; };
+		ABB25C9A286DBE59006FBBEF /* LocalizableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB25C93286DBE59006FBBEF /* LocalizableDelegate.swift */; };
 		C693461D25C4392D001DC565 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693461C25C4392D001DC565 /* UIViewController+Alert.swift */; };
 		C693462225C43A53001DC565 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693462125C43A53001DC565 /* MainViewModel.swift */; };
 		C693463925C43C6F001DC565 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693463825C43C6F001DC565 /* AppCoordinator.swift */; };
@@ -27,6 +31,16 @@
 /* Begin PBXFileReference section */
 		0A40633194C6DABD5A89ECA8 /* Pods-NumerologyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumerologyApp.debug.xcconfig"; path = "Target Support Files/Pods-NumerologyApp/Pods-NumerologyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7CC62BA2E3D7001FBB6CC55C /* Pods-NumerologyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumerologyApp.release.xcconfig"; path = "Target Support Files/Pods-NumerologyApp/Pods-NumerologyApp.release.xcconfig"; sourceTree = "<group>"; };
+		AB93A1DD286DC3EA00771549 /* uk-UA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uk-UA"; path = "uk-UA.lproj/Main.strings"; sourceTree = "<group>"; };
+		AB93A1DE286DC3EA00771549 /* uk-UA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uk-UA"; path = "uk-UA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		AB93A1DF286DC3EA00771549 /* uk-UA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uk-UA"; path = "uk-UA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AB93A1E0286DC40A00771549 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		AB93A1E1286DC40A00771549 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AB93A1E2286DC40A00771549 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ABB25C87286DBE59006FBBEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ABB25C88286DBE59006FBBEF /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		ABB25C90286DBE59006FBBEF /* Localizationable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizationable.swift; sourceTree = "<group>"; };
+		ABB25C93286DBE59006FBBEF /* LocalizableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableDelegate.swift; sourceTree = "<group>"; };
 		B89499BDEC889C797665EA29 /* Pods_NumerologyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NumerologyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C693461C25C4392D001DC565 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		C693462125C43A53001DC565 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -73,6 +87,25 @@
 				7CC62BA2E3D7001FBB6CC55C /* Pods-NumerologyApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		ABB25C82286DBE4B006FBBEF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ABB25C83286DBE59006FBBEF /* Localization */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ABB25C83286DBE59006FBBEF /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				ABB25C93286DBE59006FBBEF /* LocalizableDelegate.swift */,
+				ABB25C88286DBE59006FBBEF /* Language.swift */,
+				ABB25C90286DBE59006FBBEF /* Localizationable.swift */,
+				ABB25C84286DBE59006FBBEF /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		C693461B25C4391A001DC565 /* Extensions */ = {
@@ -138,6 +171,7 @@
 				C6F646B425C4A15300535490 /* Abstractions */,
 				C693464A25C43D4D001DC565 /* Services */,
 				C693462025C43A1F001DC565 /* Controllers */,
+				ABB25C82286DBE4B006FBBEF /* Helpers */,
 				C693461B25C4391A001DC565 /* Extensions */,
 				C6EBFF6425AE01C80040B883 /* Assets.xcassets */,
 				C6EBFF6625AE01C80040B883 /* LaunchScreen.storyboard */,
@@ -199,6 +233,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"uk-UA",
+				ru,
 			);
 			mainGroup = C6EBFF4F25AE01C50040B883;
 			productRefGroup = C6EBFF5925AE01C50040B883 /* Products */;
@@ -215,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB25C97286DBE59006FBBEF /* Localizable.strings in Resources */,
 				C6EBFF6825AE01C80040B883 /* LaunchScreen.storyboard in Resources */,
 				C6F646C325C6A25700535490 /* GoogleService-Info.plist in Resources */,
 				C6EBFF6525AE01C80040B883 /* Assets.xcassets in Resources */,
@@ -296,20 +333,35 @@
 				C693461D25C4392D001DC565 /* UIViewController+Alert.swift in Sources */,
 				C6EBFF6025AE01C50040B883 /* MainViewController.swift in Sources */,
 				C693463925C43C6F001DC565 /* AppCoordinator.swift in Sources */,
+				ABB25C99286DBE59006FBBEF /* Localizationable.swift in Sources */,
 				C693464F25C43D79001DC565 /* UserService.swift in Sources */,
+				ABB25C9A286DBE59006FBBEF /* LocalizableDelegate.swift in Sources */,
 				C6EBFF5C25AE01C50040B883 /* AppDelegate.swift in Sources */,
 				C693462225C43A53001DC565 /* MainViewModel.swift in Sources */,
 				C693464C25C43D5F001DC565 /* ServiceHolder.swift in Sources */,
+				ABB25C98286DBE59006FBBEF /* Language.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		ABB25C84286DBE59006FBBEF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABB25C87286DBE59006FBBEF /* en */,
+				AB93A1DF286DC3EA00771549 /* uk-UA */,
+				AB93A1E2286DC40A00771549 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C6EBFF6125AE01C50040B883 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C6EBFF6225AE01C50040B883 /* Base */,
+				AB93A1DD286DC3EA00771549 /* uk-UA */,
+				AB93A1E0286DC40A00771549 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -318,6 +370,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C6EBFF6725AE01C80040B883 /* Base */,
+				AB93A1DE286DC3EA00771549 /* uk-UA */,
+				AB93A1E1286DC40A00771549 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -329,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -390,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -447,6 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AF75H34W7;
 				INFOPLIST_FILE = NumerologyApp/Info.plist;
@@ -456,6 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vivtnnx.NumerologySimpleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -467,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AF75H34W7;
 				INFOPLIST_FILE = NumerologyApp/Info.plist;
@@ -476,6 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vivtnnx.NumerologySimpleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -48,6 +48,7 @@ final class MainViewController: UIViewController {
     @IBOutlet private var insertTextField: UITextField!
     @IBOutlet private var resultLabel: UILabel!
     @IBOutlet private var descriptionLabel: UILabel!
+    @IBOutlet private var calculateBtn: UIButton!
     @IBOutlet private var infoBtn: UIButton!
     
     override func viewDidLoad() {
@@ -68,7 +69,7 @@ final class MainViewController: UIViewController {
         insertLabel.text = props.insertLabelText
         insertTextField.text = props.enteredString
         resultTitle.text = props.resultLabelText
-
+        calculateBtn.setTitle(Localizationable.Global.calculate.localized, for: .normal)
         resultLabel.text = props.result
         
         switch props.state {

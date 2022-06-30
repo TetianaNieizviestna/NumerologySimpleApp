@@ -1,0 +1,28 @@
+/*
+  Localizable.strings
+  NumerologyApp
+ 
+  Created by Tetiana Nieizviestna
+ */
+
+// MARK: - Global
+"Global.error" = "Error";
+"Global.InsertText" = "Insert the text: ";
+"Global.Result" = "Result";
+"Global.Calculate" = "Calculate";
+"Global.Info" = "Info";
+"Global.AppInfoText" = "\nHow are numbers calculated in numerology?\nTo find out the meaning of numbers of any size, the method of addition (numerological reduction) is used. This technique of reducing complex to simple helps to reduce all digital values ​​​​to simple numbers from 1 to 9. It is based on the principle that elementary numbers are the initial elements that can express the entire numerical variety.\n\nFor example, after making two consecutive additions, the number 88357 turns into the number 31, and then into the number 4.\n\nSTEP 1. 88357 → 88357 → 8 + 8 + 3 + 5 + 7 = 31\nSTEP 2. 31 → 3 + 1 = 4\nWhen performing the reduction, you must constantly keep in mind one important rule: if at one of the steps you get a combination of numbers 11, 22, 13, 14, 16 or 19, then further reduction is not necessary. You have received a special number.";
+
+"Numerology.IncorrectAlgorythm" = "Incorrect algorythm!";
+
+"Numerology.Description_0" = "Represents absolute nothingness, the non-manifestation of matter.";
+"Numerology.Description_1" = "Power, might, courage, bravery, vitality.";
+"Numerology.Description_2" = "Grace, femininity, delicacy, flexibility, partnership.";
+"Numerology.Description_3" = "Fantasy, creativity; a lifestyle characteristic of a \"star\".";
+"Numerology.Description_4" = "Stability, consistency, work, patience, organization.";
+"Numerology.Description_5" = "Mobility, variability, change of place, curiosity, sensation.";
+"Numerology.Description_6" = "Harmony, tranquility, romance, family hearth.";
+"Numerology.Description_7" = "The path of the explorer, the philosophical mindset, introspection.";
+"Numerology.Description_8" = "Materiality, wisdom, certainty, compromise.";
+"Numerology.Description_9" = "Sociability, scale, versatility, variety.";
+

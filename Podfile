@@ -6,6 +6,8 @@ target 'NumerologyApp' do
   use_frameworks!
   pod 'FirebaseAnalytics', '~> 7.4.0'
   pod 'FirebaseCrashlytics', '~> 7.4.0'
+  
   # Pods for NumerologyApp
+  pod 'Localize-Swift', '~> 3.2'
 
 end

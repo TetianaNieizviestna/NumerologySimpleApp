@@ -37,23 +37,24 @@ final class MainViewModel: MainViewModelType {
     func updateProps() {
         let props: MainProps = .init(
             state: screenState,
-            insertLabelText: "Insert the text: ",
+            insertLabelText: Localizationable.Global.insertText.localized,
             enteredString: enteredString,
-            resultLabelText: "Result",
+            resultLabelText: Localizationable.Global.result.localized,
             result: "\(result)",
-            btnTitle: "Calculate",
+            btnTitle: Localizationable.Global.calculate.localized,
             descriptionText: getDescription(of: result),
-            infoAction: Command {
-                self.coordinator.showAlert(title: "Info", message: self.getInfo())
+            infoAction: Command { [weak self] in
+                guard let self = self else { return }
+                self.coordinator.showAlert(title: Localizationable.Global.info.localized, message: self.getInfo())
             },
-            calculateAction: Command {
-                self.calculate()
-                self.screenState = .calculated
-                self.updateProps()
+            calculateAction: Command { [weak self] in
+                self?.calculate()
+                self?.screenState = .calculated
+                self?.updateProps()
             },
-            changeTextAction: CommandWith { text in
-                self.enteredString = text
-                self.updateProps()
+            changeTextAction: CommandWith { [weak self] text in
+                self?.enteredString = text
+                self?.updateProps()
             }
         )
         DispatchQueue.main.async {
@@ -69,27 +70,27 @@ final class MainViewModel: MainViewModelType {
     private func getDescription(of number: Int) -> String {
         switch number {
         case 0:
-            return "Олицетворяет абсолютное небытие, непроявленность материи."
+            return Localizationable.Numerology.numerologyDescription0.localized
         case 1:
-            return "Власть, могущество, мужество, отвага, жизненная стойкость."
+            return Localizationable.Numerology.numerologyDescription1.localized
         case 2:
-            return "Изящество, женственность, деликатность, гибкость, партнерство."
+            return Localizationable.Numerology.numerologyDescription2.localized
         case 3:
-            return "Фантазия, творчество; образ жизни, характерный для «звезды»."
+            return Localizationable.Numerology.numerologyDescription3.localized
         case 4:
-            return "Устойчивость, последовательность, труд, терпение, организованность."
+            return Localizationable.Numerology.numerologyDescription4.localized
         case 5:
-            return "Мобильность, изменчивость, перемена мест, любознательность, сенсация."
+            return Localizationable.Numerology.numerologyDescription5.localized
         case 6:
-            return "Гармоничность, спокойствие, романтика, семейный очаг."
+            return Localizationable.Numerology.numerologyDescription6.localized
         case 7:
-            return "Путь исследователя, философский склад ума, самоанализ."
+            return Localizationable.Numerology.numerologyDescription7.localized
         case 8:
-            return "Материальность, мудрость, уверенность, компромисс."
+            return Localizationable.Numerology.numerologyDescription8.localized
         case 9:
-            return "Коммуникабельность, масштаб, универсальность, многообразие."
+            return Localizationable.Numerology.numerologyDescription9.localized
         default:
-            return "Error! Incorrect algorythm!"
+            return Localizationable.Numerology.incorrectAlgorythm.localized
         }
     }
     
@@ -131,15 +132,6 @@ final class MainViewModel: MainViewModelType {
     }
     
     private func getInfo() -> String {
-        return """
-            Как производится расчет чисел в нумерологии?
-            Чтобы выяснить значение чисел любой величины, применяется метод сложения (нумерологической редукции). Эта методика приведения сложного к простому помогает сокращать все цифровые значения до простых чисел от 1 до 9. В ее основе лежит принцип, говорящий о том, что элементарные цифры - это исходные элементы, которыми можно выразить все числовое многообразие.
-
-            Например, произведя последовательно два сложения, число 88357 превращается в число 31, а затем в цифру 4.
-
-            ШАГ 1. 88357 → 88357 → 8 + 8 + 3 + 5 + 7 = 31
-            ШАГ 2. 31 → 3 + 1 = 4
-            Выполняя редукцию необходимо постоянно держать в уме одно важное правило: если на одном из шагов у вас получилось сочетание цифр 11,22,13,14,16 или 19 то дальнейшее сокращение производить не нужно. Вы получили особенное число.
-            """
+        return Localizationable.Global.appInfoText.localized
     }
 }

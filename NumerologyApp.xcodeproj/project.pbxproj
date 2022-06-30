@@ -25,7 +25,6 @@
 		C6EBFF6525AE01C80040B883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6EBFF6425AE01C80040B883 /* Assets.xcassets */; };
 		C6EBFF6825AE01C80040B883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EBFF6625AE01C80040B883 /* LaunchScreen.storyboard */; };
 		C6F646AF25C497DF00535490 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F646AE25C497DF00535490 /* Command.swift */; };
-		C6F646C325C6A25700535490 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6F646C225C6A25700535490 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +56,6 @@
 		C6EBFF6725AE01C80040B883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6EBFF6925AE01C80040B883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6F646AE25C497DF00535490 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
-		C6F646C225C6A25700535490 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +173,6 @@
 				C693461B25C4391A001DC565 /* Extensions */,
 				C6EBFF6425AE01C80040B883 /* Assets.xcassets */,
 				C6EBFF6625AE01C80040B883 /* LaunchScreen.storyboard */,
-				C6F646C225C6A25700535490 /* GoogleService-Info.plist */,
 				C6EBFF6925AE01C80040B883 /* Info.plist */,
 			);
 			path = NumerologyApp;
@@ -253,7 +250,6 @@
 			files = (
 				ABB25C97286DBE59006FBBEF /* Localizable.strings in Resources */,
 				C6EBFF6825AE01C80040B883 /* LaunchScreen.storyboard in Resources */,
-				C6F646C325C6A25700535490 /* GoogleService-Info.plist in Resources */,
 				C6EBFF6525AE01C80040B883 /* Assets.xcassets in Resources */,
 				C6EBFF6325AE01C50040B883 /* Main.storyboard in Resources */,
 			);
